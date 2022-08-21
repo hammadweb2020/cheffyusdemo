@@ -10,10 +10,10 @@ import {
   Box,
   Spacer,
 } from "@chakra-ui/react";
-import { FcMenu, FcHome, FcAbout } from "react-icons/fc";
+
 import Image from "next/image";
-import { BsSearch, BsChat, BsBell } from "react-icons/bs";
-import { FiKey } from "react-icons/fi";
+import {  BsChat, BsBell } from "react-icons/bs";
+
 import { VscAccount } from "react-icons/vsc";
 import { GrUserSettings } from "react-icons/gr";
 import { BiMessageEdit } from "react-icons/bi";

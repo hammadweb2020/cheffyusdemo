@@ -6,34 +6,18 @@ import {
   Input,
   Button,
   Select,
-  Stack,
   Divider,
-  Radio,
   Grid,
   GridItem,
-  RadioGroup,
- 
   Textarea,
 } from "@chakra-ui/react";
 import styled from "styled-components";
 import CustomRadio from "./hooks/customRadio";
-import React, { useState } from "react";
-import  {FileUploader } from "react-drag-drop-files";
+
+import { FileUploader } from "react-drag-drop-files";
 const fileTypes = ["JPG", "PNG", "GIF"];
 
-
-
-
-
 const Settings = () => {
-  const [file, setFile] = useState(null);
-  const handleChange = (file) => {
-    setFile(file);
-  };
-
-
- 
-
   return (
     <>
       <StyledLogo
@@ -115,11 +99,7 @@ const Settings = () => {
                 <FormControl mt={6}>
                   <FormLabel>Who you are</FormLabel>
 
-
-          
-                  <CustomRadio/>
-
-            
+                  <CustomRadio />
                 </FormControl>
                 <FormControl mt={6}>
                   <Button
@@ -157,7 +137,7 @@ const Settings = () => {
                   </FormLabel>
 
                   <Select placeholder="">
-                  <option value="">SELECT DOCUMENTS</option>
+                    <option value="">SELECT DOCUMENTS</option>
                     <option value="ID Card">ID Card</option>
                     <option value="License">License</option>
                   </Select>
@@ -165,7 +145,7 @@ const Settings = () => {
                 <FormControl mt={6}>
                   <FileUploader
                     multiple={true}
-                    handleChange={handleChange}
+                   
                     name="file"
                     types={fileTypes}
                   />
